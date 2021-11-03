@@ -88,6 +88,33 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("sms_body","자동 입력할 문구")
             startActivity(myIntent)
         }
+
+        btnNaver.setOnClickListener {
+
+
+            val inputPhoneNum = edtPhoneNum.text.toString()
+
+//            제공할 정보 2가지. 1) 어떤 화면으로 갈건가? (ACTIoON)/ 2)세부정보(전화걸기 - 어디로 전화?) -Uri
+
+            val myUri = Uri.parse("https://www.naver.com/")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+
+
+            startActivity(myIntent)
+        }
+
+        btnCacao.setOnClickListener {
+
+
+
+//            제공할 정보 2가지. 1) 어떤 화면으로 갈건가? (ACTIoON)/ 2)세부정보(전화걸기 - 어디로 전화?) -Uri
+
+            val myUri = Uri.parse("market:details?id=com.kakao.talk")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+
+
+            startActivity(myIntent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

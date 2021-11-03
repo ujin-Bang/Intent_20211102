@@ -81,5 +81,19 @@
         android:layout_height="wrap_content"
         android:text="문자보내기(sendto)" />
 
+    <Button
+        android:id="@+id/btnNaver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버웹링크" />
+
+    <Button
+        android:id="@+id/btnCacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카톡다운로드" />
+
+
+
 
 </LinearLayout>
