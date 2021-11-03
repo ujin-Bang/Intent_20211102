@@ -57,7 +57,7 @@
         android:text="연결할 전화번호" />
 
     <EditText
-        android:id="@+id/detPhoneNum"
+        android:id="@+id/edtPhoneNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="전화번호입력"
@@ -75,6 +75,11 @@
         android:layout_height="wrap_content"
         android:text="전화걸기(Call)" />
 
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전봐보내기(sendto)" />
 
 
 </LinearLayout>
