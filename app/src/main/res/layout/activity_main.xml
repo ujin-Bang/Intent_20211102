@@ -69,5 +69,12 @@
         android:layout_height="wrap_content"
         android:text="전화걸기(Dial)" />
 
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화걸기(Call)" />
+
+
 
 </LinearLayout>
