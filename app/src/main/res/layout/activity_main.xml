@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력한 메세지를 다른화면에 전달" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="코딩티처"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <EditText
             android:layout_width="199dp"
@@ -53,22 +54,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="연결할 전화번호"/>
+        android:text="연결할 전화번호" />
 
     <EditText
         android:id="@+id/detPhoneNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="전화번호입력"
-        android:inputType="phone"/>
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/btnDial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="전화걸기(Dial)"/>
-
-
+        android:text="전화걸기(Dial)" />
 
 
 </LinearLayout>
