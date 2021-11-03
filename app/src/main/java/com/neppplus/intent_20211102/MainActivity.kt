@@ -6,6 +6,9 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val REQ_CODE_FOR_NICKNAME = 1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,5 +40,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnEditNickname.setOnClickListener {
+
+            val myIntent = Intent(this, EditNicknameActivity::class.java)
+
+//            넘어갔다가 (어떤데이터)를 들고 "돌아올 것이다" 명시
+            startActivityForResult( myIntent, REQ_CODE_FOR_NICKNAME )
+        }
     }
 }
