@@ -1,5 +1,6 @@
 package com.neppplus.intent_20211102
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_edit_nickname.*
@@ -18,10 +19,10 @@ class EditNicknameActivity : AppCompatActivity() {
             val resultIntent = Intent()//왕복이고, 데이터를 담기 위한 목적만 있음 출발/도착지 명시X\\
 
 //            실제 데이터 첨부. putextra
-            resultIntent.putExtra("nick, inputNickName)
+            resultIntent.putExtra("nick", inputNickName)
 
 //                최종 결과 ( 확인누름, 들고 돌아가 데이터) 지정
-            setresult( RESULT_OK, resultIntent)
+            setResult( RESULT_OK, resultIntent)
 
 //            실제 이전 화면 복귀
             finish()
